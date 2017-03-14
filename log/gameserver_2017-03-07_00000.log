@@ -1,0 +1,7 @@
+[2017-03-07 06:30:00.089607] <trace> (Test.cpp::main::7) : test trace, two
+[2017-03-07 06:30:00.111093] <debug> (Test.cpp::main::8) : test debug, two
+[2017-03-07 06:30:00.111126] <debug> (Test.cpp::main::9) : test debug..5
+[2017-03-07 06:30:00.111146] <info> (Test.cpp::main::10) : test info, two
+[2017-03-07 06:30:00.111165] <warning> (Test.cpp::main::11) : test warning, two
+[2017-03-07 06:30:00.111184] <error> (Test.cpp::main::12) : test error, two
+[2017-03-07 06:30:00.111203] <fatal> (Test.cpp::main::13) : test fatal, two

@@ -1,0 +1,8 @@
+[2017-02-12 19:42:17.954447] <info>: test info, two
+[2017-02-12 19:42:17.963014] <warning>: test warning, two
+[2017-02-12 19:42:17.963051] <error>: test error, two
+[2017-02-12 19:42:17.963176] <fatal>: test fatal, two
+[2017-02-12 20:05:23.759996] <info> (Test.cpp::main::9) : test info, two
+[2017-02-12 20:05:23.760204] <warning> (Test.cpp::main::10) : test warning, two
+[2017-02-12 20:05:23.760231] <error> (Test.cpp::main::11) : test error, two
+[2017-02-12 20:05:23.760251] <fatal> (Test.cpp::main::12) : test fatal, two

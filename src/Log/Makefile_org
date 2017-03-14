@@ -1,0 +1,16 @@
+######################################
+##			Makefile of Log			##
+######################################
+
+include $(PROJ_HOME)/IncludePre.mk
+
+# TARGET 컴파일에 필요한 라이브러리명 지정
+LIB_NAME = Log
+# 라이브러리 생성정보 선언
+LIB_SRCS = Log.cpp
+# Target 생성정보 선언
+TARGET_SRCS = 
+
+#LIBS += -I/usr/local/boost_1_63_0
+
+include $(PROJ_HOME)/IncludePost.mk

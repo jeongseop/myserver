@@ -1,0 +1,105 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>JS_GameServer: include/MySql.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 다음에 의해 생성됨 :  Doxygen 1.6.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>메인&nbsp;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="검색" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>파일&nbsp;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&nbsp;멤버</span></a></li>
+    </ul>
+  </div>
+<h1>include/MySql.h</h1><a href="MySql_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00008"></a>00008 <span class="preprocessor">#ifndef __MYSQL_H__</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="preprocessor">#define __MYSQL_H__</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;mysql/mysql.h&gt;</span>
+<a name="l00014"></a>00014 <span class="keyword">using namespace </span>std;
+<a name="l00015"></a>00015 
+<a name="l00016"></a><a class="code" href="classCMySql.html">00016</a> <span class="keyword">class </span><a class="code" href="classCMySql.html" title="MySql 관리 클래스.">CMySql</a>
+<a name="l00017"></a>00017 {
+<a name="l00018"></a>00018 <span class="keyword">private</span>:
+<a name="l00019"></a><a class="code" href="classCMySql.html#a74732c9ad7550228311df70ff7846870">00019</a>         MYSQL                   *<a class="code" href="classCMySql.html#a74732c9ad7550228311df70ff7846870" title="MySql 연결체.">m_MySqlConnection</a>; 
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="classCMySql.html#a434ad1058383726a4e0851bd4af83bed">00021</a>         MYSQL_RES               *<a class="code" href="classCMySql.html#a434ad1058383726a4e0851bd4af83bed" title="Select 결과 데이터.">m_res</a>; 
+<a name="l00022"></a><a class="code" href="classCMySql.html#a9f0d22a3ca8f698ed70289452342f53e">00022</a>         MYSQL_ROW                <a class="code" href="classCMySql.html#a9f0d22a3ca8f698ed70289452342f53e" title="Select결과에서 현재 ROW정보.">m_row</a>; 
+<a name="l00023"></a><a class="code" href="classCMySql.html#a3733f6741b063ef20005dfe92893655b">00023</a>         MYSQL_FIELD             *<a class="code" href="classCMySql.html#a3733f6741b063ef20005dfe92893655b" title="현재 ROW의 FIELD정보">m_filed</a>; 
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">public</span>:
+<a name="l00026"></a>00026         <span class="keywordtype">void</span> <a class="code" href="classCMySql.html#a0b2f602fc0a7b291d4a0cec59fa76124" title="MySql 연결시도.">ConnectMySql</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> hostName
+<a name="l00027"></a>00027                         , <span class="keyword">const</span> <span class="keywordtype">string</span> userId
+<a name="l00028"></a>00028                         , <span class="keyword">const</span> <span class="keywordtype">string</span> passwd
+<a name="l00029"></a>00029                         , <span class="keyword">const</span> <span class="keywordtype">string</span> DB); 
+<a name="l00030"></a>00030         <span class="keywordtype">void</span> <a class="code" href="classCMySql.html#a20481aded19016f0d1b0eaf8d27aa558" title="MySql 연결종료.">DisConnectMySql</a>(); 
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032         <span class="keywordtype">bool</span> <a class="code" href="classCMySql.html#a5be8786b07864ba655ef55378f66ada7" title="MySql 접속 확인.">isConnected</a>(); 
+<a name="l00033"></a>00033         <span class="keywordtype">bool</span> <a class="code" href="classCMySql.html#a4d3029d73d2b9601a4bb800721c3974d" title="다음 조회데이터가 있는지 확인">hasNext</a>(); 
+<a name="l00034"></a>00034         <span class="keywordtype">bool</span> <a class="code" href="classCMySql.html#af7eb82330c5e96fd76d740654639aa40" title="이전 조회데이터가 있는지 확인">hasPrev</a>(); 
+<a name="l00035"></a>00035         <span class="keywordtype">bool</span> <a class="code" href="classCMySql.html#a7748c82b0baa453b5cadf7ee209e3998" title="cnt만큼 이동한 조회데이터가 있는지 확인">hasMove</a>(<span class="keywordtype">int</span> cnt); 
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037         <span class="keywordtype">int</span> <a class="code" href="classCMySql.html#ab68631ceb288121957589643cd096757" title="다음 조회데이터로 셋팅">Next</a>(); 
+<a name="l00038"></a>00038         <span class="keywordtype">int</span> <a class="code" href="classCMySql.html#a579e51c63985da9d8a0bd9a6b463879a" title="이전 조회데이터로 셋팅">Prev</a>(); 
+<a name="l00039"></a>00039         <span class="keywordtype">int</span> <a class="code" href="classCMySql.html#a92ff6e04a1a7985494e948884d4ab8fb" title="cnt만큼 이동한 조회데이터 셋팅">Move</a>(<span class="keywordtype">int</span> cnt); 
+<a name="l00040"></a>00040         <span class="keywordtype">int</span> <a class="code" href="classCMySql.html#ab356f387b622ff7b977b720f66438d2a" title="처음 ROW로 셋팅">First</a>(); 
+<a name="l00041"></a>00041         <span class="keywordtype">int</span> <a class="code" href="classCMySql.html#af8409e3cd8cb029fa1823efe99e7524b" title="마지막 ROW로 셋팅">Last</a>(); 
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043         <span class="keywordtype">int</span> <a class="code" href="classCMySql.html#a829b67873c1ccc01565d19c7dbac717b" title="쿼리 실행">ExecuteQuery</a>(<span class="keywordtype">string</span> query); 
+<a name="l00044"></a>00044         <span class="keywordtype">string</span> <a class="code" href="classCMySql.html#a47f9180acc8779dce03902cf3edcc598" title="필드명에 해당하는 데이터 출력">getField</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> fieldName); 
+<a name="l00045"></a><a class="code" href="classCMySql.html#ab282013a24a7629a8fbfd5520e13bf0e">00045</a>         <span class="keywordtype">string</span> <a class="code" href="classCMySql.html#ab282013a24a7629a8fbfd5520e13bf0e">operator[]</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> fieldName) { <span class="keywordflow">return</span> <a class="code" href="classCMySql.html#a47f9180acc8779dce03902cf3edcc598" title="필드명에 해당하는 데이터 출력">getField</a>(fieldName); }
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>클래스</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>변수</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr size="1"/><address style="text-align: right;"><small>생성시간 : 23 Jan 2017, 프로젝트명 : JS_GameServer, 생성자 : &nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

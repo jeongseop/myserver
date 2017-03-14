@@ -1,0 +1,528 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>JS_GameServer: CMySql 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 다음에 의해 생성됨 :  Doxygen 1.6.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>메인&nbsp;페이지</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+      <li><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="검색" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>클래스&nbsp;목록</span></a></li>
+      <li><a href="functions.html"><span>클래스&nbsp;멤버</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>CMySql 클래스 참조</h1><!-- doxytag: class="CMySql" -->
+<p>MySql 관리 클래스.  
+<a href="#_details">더 자세히 ...</a></p>
+
+<p><code>#include &lt;<a class="el" href="MySql_8h_source.html">MySql.h</a>&gt;</code></p>
+
+<p><a href="classCMySql-members.html">모든 멤버 목록</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public 멤버 함수</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a0b2f602fc0a7b291d4a0cec59fa76124">ConnectMySql</a> (const string hostName, const string userId, const string passwd, const string DB)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">MySql 연결시도.  <a href="#a0b2f602fc0a7b291d4a0cec59fa76124"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a20481aded19016f0d1b0eaf8d27aa558">DisConnectMySql</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">MySql 연결종료.  <a href="#a20481aded19016f0d1b0eaf8d27aa558"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a5be8786b07864ba655ef55378f66ada7">isConnected</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">MySql 접속 확인.  <a href="#a5be8786b07864ba655ef55378f66ada7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a4d3029d73d2b9601a4bb800721c3974d">hasNext</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">다음 조회데이터가 있는지 확인  <a href="#a4d3029d73d2b9601a4bb800721c3974d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#af7eb82330c5e96fd76d740654639aa40">hasPrev</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">이전 조회데이터가 있는지 확인  <a href="#af7eb82330c5e96fd76d740654639aa40"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a7748c82b0baa453b5cadf7ee209e3998">hasMove</a> (int cnt)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">cnt만큼 이동한 조회데이터가 있는지 확인  <a href="#a7748c82b0baa453b5cadf7ee209e3998"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#ab68631ceb288121957589643cd096757">Next</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">다음 조회데이터로 셋팅  <a href="#ab68631ceb288121957589643cd096757"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a579e51c63985da9d8a0bd9a6b463879a">Prev</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">이전 조회데이터로 셋팅  <a href="#a579e51c63985da9d8a0bd9a6b463879a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a92ff6e04a1a7985494e948884d4ab8fb">Move</a> (int cnt)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">cnt만큼 이동한 조회데이터 셋팅  <a href="#a92ff6e04a1a7985494e948884d4ab8fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#ab356f387b622ff7b977b720f66438d2a">First</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">처음 ROW로 셋팅  <a href="#ab356f387b622ff7b977b720f66438d2a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#af8409e3cd8cb029fa1823efe99e7524b">Last</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">마지막 ROW로 셋팅  <a href="#af8409e3cd8cb029fa1823efe99e7524b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a829b67873c1ccc01565d19c7dbac717b">ExecuteQuery</a> (string query)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">쿼리 실행  <a href="#a829b67873c1ccc01565d19c7dbac717b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a47f9180acc8779dce03902cf3edcc598">getField</a> (const string fieldName)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">필드명에 해당하는 데이터 출력  <a href="#a47f9180acc8779dce03902cf3edcc598"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#ab282013a24a7629a8fbfd5520e13bf0e">operator[]</a> (const string fieldName)</td></tr>
+<tr><td colspan="2"><h2>Private 속성</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">MYSQL *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a74732c9ad7550228311df70ff7846870">m_MySqlConnection</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">MySql 연결체.  <a href="#a74732c9ad7550228311df70ff7846870"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">MYSQL_RES *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a434ad1058383726a4e0851bd4af83bed">m_res</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Select 결과 데이터.  <a href="#a434ad1058383726a4e0851bd4af83bed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">MYSQL_ROW&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a9f0d22a3ca8f698ed70289452342f53e">m_row</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Select결과에서 현재 ROW정보.  <a href="#a9f0d22a3ca8f698ed70289452342f53e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">MYSQL_FIELD *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMySql.html#a3733f6741b063ef20005dfe92893655b">m_filed</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">현재 ROW의 FIELD정보  <a href="#a3733f6741b063ef20005dfe92893655b"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>상세한 설명</h2>
+<p>MySql 관리 클래스. </p>
+<dl class="date"><dt><b>날짜:</b></dt><dd>2017/1/22 </dd></dl>
+<dl class="author"><dt><b>작성자:</b></dt><dd>심정섭(<a href="mailto:jeongsub3312@gmail.com">jeongsub3312@gmail.com</a>) </dd></dl>
+<hr/><h2>멤버 함수 문서화</h2>
+<a class="anchor" id="a0b2f602fc0a7b291d4a0cec59fa76124"></a><!-- doxytag: member="CMySql::ConnectMySql" ref="a0b2f602fc0a7b291d4a0cec59fa76124" args="(const string hostName, const string userId, const string passwd, const string DB)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMySql::ConnectMySql </td>
+          <td>(</td>
+          <td class="paramtype">const string&nbsp;</td>
+          <td class="paramname"> <em>hostName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string&nbsp;</td>
+          <td class="paramname"> <em>userId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string&nbsp;</td>
+          <td class="paramname"> <em>passwd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string&nbsp;</td>
+          <td class="paramname"> <em>DB</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MySql 연결시도. </p>
+
+<p><div class="fragment"><pre class="fragment"><a name="l00007"></a>00007 {
+<a name="l00008"></a>00008         MySQL *MySqlConRet;
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010         <span class="keywordflow">try</span> {
+<a name="l00011"></a>00011                 <span class="comment">// mysql 접속 시도</span>
+<a name="l00012"></a>00012                 MySqlConRet = mysql_real_connect( this.<a class="code" href="classCMySql.html#a74732c9ad7550228311df70ff7846870" title="MySql 연결체.">m_MySqlConnection</a>,
+<a name="l00013"></a>00013                                                                                   hostName.c_str(),
+<a name="l00014"></a>00014                                                                                   userId.c_str(),
+<a name="l00015"></a>00015                                                                                   passwd.c_str(),
+<a name="l00016"></a>00016                                                                                   DB.c_str(),
+<a name="l00017"></a>00017                                                                                   0,
+<a name="l00018"></a>00018                                                                                   NULL,
+<a name="l00019"></a>00019                                                                                   0 );
+<a name="l00020"></a>00020                 <span class="comment">// mysql 접속 실패시 에러정보 throw</span>
+<a name="l00021"></a>00021                 <span class="keywordflow">if</span>( MySqlConRet == NULL )
+<a name="l00022"></a>00022                 {
+<a name="l00023"></a>00023                         <span class="keywordtype">string</span> error = mysql_error(this.<a class="code" href="classCMySql.html#a74732c9ad7550228311df70ff7846870" title="MySql 연결체.">m_MySqlConnection</a>);
+<a name="l00024"></a>00024                         <span class="keywordflow">throw</span> error;
+<a name="l00025"></a>00025                 }
+<a name="l00026"></a>00026         }
+<a name="l00027"></a>00027         <span class="keywordflow">catch</span> (<span class="keywordtype">string</span> e)
+<a name="l00028"></a>00028         {
+<a name="l00029"></a>00029                 <span class="comment">// mysql 접속 실패</span>
+<a name="l00030"></a>00030         }
+<a name="l00031"></a>00031 }
+</pre></div></p>
+
+</div>
+</div>
+<a class="anchor" id="a20481aded19016f0d1b0eaf8d27aa558"></a><!-- doxytag: member="CMySql::DisConnectMySql" ref="a20481aded19016f0d1b0eaf8d27aa558" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMySql::DisConnectMySql </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MySql 연결종료. </p>
+
+<p><div class="fragment"><pre class="fragment"><a name="l00034"></a>00034 {
+<a name="l00035"></a>00035         <span class="keywordflow">if</span>( this.<a class="code" href="classCMySql.html#a74732c9ad7550228311df70ff7846870" title="MySql 연결체.">m_MySqlConnection</a> != NULL )
+<a name="l00036"></a>00036                 mysql_close(this.<a class="code" href="classCMySql.html#a74732c9ad7550228311df70ff7846870" title="MySql 연결체.">m_MySqlConnection</a>);
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038         this.<a class="code" href="classCMySql.html#a74732c9ad7550228311df70ff7846870" title="MySql 연결체.">m_MySqlConnection</a> = NULL;
+<a name="l00039"></a>00039 }
+</pre></div></p>
+
+</div>
+</div>
+<a class="anchor" id="a829b67873c1ccc01565d19c7dbac717b"></a><!-- doxytag: member="CMySql::ExecuteQuery" ref="a829b67873c1ccc01565d19c7dbac717b" args="(string query)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CMySql::ExecuteQuery </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>query</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>쿼리 실행 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab356f387b622ff7b977b720f66438d2a"></a><!-- doxytag: member="CMySql::First" ref="ab356f387b622ff7b977b720f66438d2a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CMySql::First </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>처음 ROW로 셋팅 </p>
+
+</div>
+</div>
+<a class="anchor" id="a47f9180acc8779dce03902cf3edcc598"></a><!-- doxytag: member="CMySql::getField" ref="a47f9180acc8779dce03902cf3edcc598" args="(const string fieldName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CMySql::getField </td>
+          <td>(</td>
+          <td class="paramtype">const string&nbsp;</td>
+          <td class="paramname"> <em>fieldName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>필드명에 해당하는 데이터 출력 </p>
+
+<p><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dynsection">
+<div class="center"><img src="classCMySql_a47f9180acc8779dce03902cf3edcc598_icgraph.png" border="0" usemap="#classCMySql_a47f9180acc8779dce03902cf3edcc598_icgraph_map" alt=""></div>
+<map name="classCMySql_a47f9180acc8779dce03902cf3edcc598_icgraph_map" id="classCMySql_a47f9180acc8779dce03902cf3edcc598_icgraph">
+<area shape="rect" id="node3" href="classCMySql.html#ab282013a24a7629a8fbfd5520e13bf0e" title="CMySql::operator[]" alt="" coords="177,5,308,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7748c82b0baa453b5cadf7ee209e3998"></a><!-- doxytag: member="CMySql::hasMove" ref="a7748c82b0baa453b5cadf7ee209e3998" args="(int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMySql::hasMove </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>cnt만큼 이동한 조회데이터가 있는지 확인 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d3029d73d2b9601a4bb800721c3974d"></a><!-- doxytag: member="CMySql::hasNext" ref="a4d3029d73d2b9601a4bb800721c3974d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMySql::hasNext </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>다음 조회데이터가 있는지 확인 </p>
+
+</div>
+</div>
+<a class="anchor" id="af7eb82330c5e96fd76d740654639aa40"></a><!-- doxytag: member="CMySql::hasPrev" ref="af7eb82330c5e96fd76d740654639aa40" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMySql::hasPrev </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>이전 조회데이터가 있는지 확인 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5be8786b07864ba655ef55378f66ada7"></a><!-- doxytag: member="CMySql::isConnected" ref="a5be8786b07864ba655ef55378f66ada7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMySql::isConnected </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MySql 접속 확인. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8409e3cd8cb029fa1823efe99e7524b"></a><!-- doxytag: member="CMySql::Last" ref="af8409e3cd8cb029fa1823efe99e7524b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CMySql::Last </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>마지막 ROW로 셋팅 </p>
+
+</div>
+</div>
+<a class="anchor" id="a92ff6e04a1a7985494e948884d4ab8fb"></a><!-- doxytag: member="CMySql::Move" ref="a92ff6e04a1a7985494e948884d4ab8fb" args="(int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CMySql::Move </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>cnt만큼 이동한 조회데이터 셋팅 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab68631ceb288121957589643cd096757"></a><!-- doxytag: member="CMySql::Next" ref="ab68631ceb288121957589643cd096757" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CMySql::Next </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>다음 조회데이터로 셋팅 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab282013a24a7629a8fbfd5520e13bf0e"></a><!-- doxytag: member="CMySql::operator[]" ref="ab282013a24a7629a8fbfd5520e13bf0e" args="(const string fieldName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CMySql::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const string&nbsp;</td>
+          <td class="paramname"> <em>fieldName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="fragment"><pre class="fragment"><a name="l00045"></a>00045 { <span class="keywordflow">return</span> <a class="code" href="classCMySql.html#a47f9180acc8779dce03902cf3edcc598" title="필드명에 해당하는 데이터 출력">getField</a>(fieldName); }
+</pre></div></p>
+
+<p><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dynsection">
+<div class="center"><img src="classCMySql_ab282013a24a7629a8fbfd5520e13bf0e_cgraph.png" border="0" usemap="#classCMySql_ab282013a24a7629a8fbfd5520e13bf0e_cgraph_map" alt=""></div>
+<map name="classCMySql_ab282013a24a7629a8fbfd5520e13bf0e_cgraph_map" id="classCMySql_ab282013a24a7629a8fbfd5520e13bf0e_cgraph">
+<area shape="rect" id="node3" href="classCMySql.html#a47f9180acc8779dce03902cf3edcc598" title="필드명에 해당하는 데이터 출력" alt="" coords="187,5,309,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a579e51c63985da9d8a0bd9a6b463879a"></a><!-- doxytag: member="CMySql::Prev" ref="a579e51c63985da9d8a0bd9a6b463879a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CMySql::Prev </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>이전 조회데이터로 셋팅 </p>
+
+</div>
+</div>
+<hr/><h2>멤버 데이타 문서화</h2>
+<a class="anchor" id="a3733f6741b063ef20005dfe92893655b"></a><!-- doxytag: member="CMySql::m_filed" ref="a3733f6741b063ef20005dfe92893655b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_FIELD* <a class="el" href="classCMySql.html#a3733f6741b063ef20005dfe92893655b">CMySql::m_filed</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>현재 ROW의 FIELD정보 </p>
+
+</div>
+</div>
+<a class="anchor" id="a74732c9ad7550228311df70ff7846870"></a><!-- doxytag: member="CMySql::m_MySqlConnection" ref="a74732c9ad7550228311df70ff7846870" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL* <a class="el" href="classCMySql.html#a74732c9ad7550228311df70ff7846870">CMySql::m_MySqlConnection</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MySql 연결체. </p>
+
+</div>
+</div>
+<a class="anchor" id="a434ad1058383726a4e0851bd4af83bed"></a><!-- doxytag: member="CMySql::m_res" ref="a434ad1058383726a4e0851bd4af83bed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_RES* <a class="el" href="classCMySql.html#a434ad1058383726a4e0851bd4af83bed">CMySql::m_res</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Select 결과 데이터. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f0d22a3ca8f698ed70289452342f53e"></a><!-- doxytag: member="CMySql::m_row" ref="a9f0d22a3ca8f698ed70289452342f53e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_ROW <a class="el" href="classCMySql.html#a9f0d22a3ca8f698ed70289452342f53e">CMySql::m_row</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Select결과에서 현재 ROW정보. </p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.:<ul>
+<li>include/<a class="el" href="MySql_8h_source.html">MySql.h</a></li>
+<li>src/MySql/<a class="el" href="MySql_8cpp.html">MySql.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>클래스</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>변수</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr size="1"/><address style="text-align: right;"><small>생성시간 : 23 Jan 2017, 프로젝트명 : JS_GameServer, 생성자 : &nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>
