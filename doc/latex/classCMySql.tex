@@ -1,0 +1,254 @@
+\hypertarget{classCMySql}{
+\section{CMySql 클래스 참조}
+\label{classCMySql}\index{CMySql@{CMySql}}
+}
+
+
+MySql 관리 클래스.  
+
+
+{\ttfamily \#include $<$MySql.h$>$}\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCMySql_a0b2f602fc0a7b291d4a0cec59fa76124}{ConnectMySql} (const string hostName, const string userId, const string passwd, const string DB)
+\begin{DoxyCompactList}\small\item\em MySql 연결시도. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCMySql_a20481aded19016f0d1b0eaf8d27aa558}{DisConnectMySql} ()
+\begin{DoxyCompactList}\small\item\em MySql 연결종료. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCMySql_a5be8786b07864ba655ef55378f66ada7}{isConnected} ()
+\begin{DoxyCompactList}\small\item\em MySql 접속 확인. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCMySql_a4d3029d73d2b9601a4bb800721c3974d}{hasNext} ()
+\begin{DoxyCompactList}\small\item\em 다음 조회데이터가 있는지 확인 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCMySql_af7eb82330c5e96fd76d740654639aa40}{hasPrev} ()
+\begin{DoxyCompactList}\small\item\em 이전 조회데이터가 있는지 확인 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCMySql_a7748c82b0baa453b5cadf7ee209e3998}{hasMove} (int cnt)
+\begin{DoxyCompactList}\small\item\em cnt만큼 이동한 조회데이터가 있는지 확인 \item\end{DoxyCompactList}\item 
+int \hyperlink{classCMySql_ab68631ceb288121957589643cd096757}{Next} ()
+\begin{DoxyCompactList}\small\item\em 다음 조회데이터로 셋팅 \item\end{DoxyCompactList}\item 
+int \hyperlink{classCMySql_a579e51c63985da9d8a0bd9a6b463879a}{Prev} ()
+\begin{DoxyCompactList}\small\item\em 이전 조회데이터로 셋팅 \item\end{DoxyCompactList}\item 
+int \hyperlink{classCMySql_a92ff6e04a1a7985494e948884d4ab8fb}{Move} (int cnt)
+\begin{DoxyCompactList}\small\item\em cnt만큼 이동한 조회데이터 셋팅 \item\end{DoxyCompactList}\item 
+int \hyperlink{classCMySql_ab356f387b622ff7b977b720f66438d2a}{First} ()
+\begin{DoxyCompactList}\small\item\em 처음 ROW로 셋팅 \item\end{DoxyCompactList}\item 
+int \hyperlink{classCMySql_af8409e3cd8cb029fa1823efe99e7524b}{Last} ()
+\begin{DoxyCompactList}\small\item\em 마지막 ROW로 셋팅 \item\end{DoxyCompactList}\item 
+int \hyperlink{classCMySql_a829b67873c1ccc01565d19c7dbac717b}{ExecuteQuery} (string query)
+\begin{DoxyCompactList}\small\item\em 쿼리 실행 \item\end{DoxyCompactList}\item 
+string \hyperlink{classCMySql_a47f9180acc8779dce03902cf3edcc598}{getField} (const string fieldName)
+\begin{DoxyCompactList}\small\item\em 필드명에 해당하는 데이터 출력 \item\end{DoxyCompactList}\item 
+string \hyperlink{classCMySql_ab282013a24a7629a8fbfd5520e13bf0e}{operator\mbox{[}$\,$\mbox{]}} (const string fieldName)
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+MYSQL $\ast$ \hyperlink{classCMySql_a74732c9ad7550228311df70ff7846870}{m\_\-MySqlConnection}
+\begin{DoxyCompactList}\small\item\em MySql 연결체. \item\end{DoxyCompactList}\item 
+MYSQL\_\-RES $\ast$ \hyperlink{classCMySql_a434ad1058383726a4e0851bd4af83bed}{m\_\-res}
+\begin{DoxyCompactList}\small\item\em Select 결과 데이터. \item\end{DoxyCompactList}\item 
+MYSQL\_\-ROW \hyperlink{classCMySql_a9f0d22a3ca8f698ed70289452342f53e}{m\_\-row}
+\begin{DoxyCompactList}\small\item\em Select결과에서 현재 ROW정보. \item\end{DoxyCompactList}\item 
+MYSQL\_\-FIELD $\ast$ \hyperlink{classCMySql_a3733f6741b063ef20005dfe92893655b}{m\_\-filed}
+\begin{DoxyCompactList}\small\item\em 현재 ROW의 FIELD정보 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+MySql 관리 클래스. \begin{DoxyDate}{날짜}
+2017/1/22 
+\end{DoxyDate}
+\begin{DoxyAuthor}{작성자}
+심정섭(\href{mailto:jeongsub3312@gmail.com}{\tt jeongsub3312@gmail.com}) 
+\end{DoxyAuthor}
+
+
+\subsection{멤버 함수 문서화}
+\hypertarget{classCMySql_a0b2f602fc0a7b291d4a0cec59fa76124}{
+\index{CMySql@{CMySql}!ConnectMySql@{ConnectMySql}}
+\index{ConnectMySql@{ConnectMySql}!CMySql@{CMySql}}
+\subsubsection[{ConnectMySql}]{\setlength{\rightskip}{0pt plus 5cm}void CMySql::ConnectMySql (const string {\em hostName}, \/  const string {\em userId}, \/  const string {\em passwd}, \/  const string {\em DB})}}
+\label{classCMySql_a0b2f602fc0a7b291d4a0cec59fa76124}
+
+
+MySql 연결시도. 
+
+
+\begin{DoxyCode}
+7 {
+8         MySQL *MySqlConRet;
+9 
+10         try {
+11                 // mysql 접속 시도
+12                 MySqlConRet = mysql_real_connect( this.m_MySqlConnection,
+13                                                                                  
+       hostName.c_str(),
+14                                                                                  
+       userId.c_str(),
+15                                                                                  
+       passwd.c_str(),
+16                                                                                  
+       DB.c_str(),
+17                                                                                  
+       0,
+18                                                                                  
+       NULL,
+19                                                                                  
+       0 );
+20                 // mysql 접속 실패시 에러정보 throw
+21                 if( MySqlConRet == NULL )
+22                 {
+23                         string error = mysql_error(this.m_MySqlConnection);
+24                         throw error;
+25                 }
+26         }
+27         catch (string e)
+28         {
+29                 // mysql 접속 실패
+30         }
+31 }
+\end{DoxyCode}
+\hypertarget{classCMySql_a20481aded19016f0d1b0eaf8d27aa558}{
+\index{CMySql@{CMySql}!DisConnectMySql@{DisConnectMySql}}
+\index{DisConnectMySql@{DisConnectMySql}!CMySql@{CMySql}}
+\subsubsection[{DisConnectMySql}]{\setlength{\rightskip}{0pt plus 5cm}void CMySql::DisConnectMySql ()}}
+\label{classCMySql_a20481aded19016f0d1b0eaf8d27aa558}
+
+
+MySql 연결종료. 
+
+
+\begin{DoxyCode}
+34 {
+35         if( this.m_MySqlConnection != NULL )
+36                 mysql_close(this.m_MySqlConnection);
+37 
+38         this.m_MySqlConnection = NULL;
+39 }
+\end{DoxyCode}
+\hypertarget{classCMySql_a829b67873c1ccc01565d19c7dbac717b}{
+\index{CMySql@{CMySql}!ExecuteQuery@{ExecuteQuery}}
+\index{ExecuteQuery@{ExecuteQuery}!CMySql@{CMySql}}
+\subsubsection[{ExecuteQuery}]{\setlength{\rightskip}{0pt plus 5cm}int CMySql::ExecuteQuery (string {\em query})}}
+\label{classCMySql_a829b67873c1ccc01565d19c7dbac717b}
+
+
+쿼리 실행 \hypertarget{classCMySql_ab356f387b622ff7b977b720f66438d2a}{
+\index{CMySql@{CMySql}!First@{First}}
+\index{First@{First}!CMySql@{CMySql}}
+\subsubsection[{First}]{\setlength{\rightskip}{0pt plus 5cm}int CMySql::First ()}}
+\label{classCMySql_ab356f387b622ff7b977b720f66438d2a}
+
+
+처음 ROW로 셋팅 \hypertarget{classCMySql_a47f9180acc8779dce03902cf3edcc598}{
+\index{CMySql@{CMySql}!getField@{getField}}
+\index{getField@{getField}!CMySql@{CMySql}}
+\subsubsection[{getField}]{\setlength{\rightskip}{0pt plus 5cm}string CMySql::getField (const string {\em fieldName})}}
+\label{classCMySql_a47f9180acc8779dce03902cf3edcc598}
+
+
+필드명에 해당하는 데이터 출력 
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.:\hypertarget{classCMySql_a7748c82b0baa453b5cadf7ee209e3998}{
+\index{CMySql@{CMySql}!hasMove@{hasMove}}
+\index{hasMove@{hasMove}!CMySql@{CMySql}}
+\subsubsection[{hasMove}]{\setlength{\rightskip}{0pt plus 5cm}bool CMySql::hasMove (int {\em cnt})}}
+\label{classCMySql_a7748c82b0baa453b5cadf7ee209e3998}
+
+
+cnt만큼 이동한 조회데이터가 있는지 확인 \hypertarget{classCMySql_a4d3029d73d2b9601a4bb800721c3974d}{
+\index{CMySql@{CMySql}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!CMySql@{CMySql}}
+\subsubsection[{hasNext}]{\setlength{\rightskip}{0pt plus 5cm}bool CMySql::hasNext ()}}
+\label{classCMySql_a4d3029d73d2b9601a4bb800721c3974d}
+
+
+다음 조회데이터가 있는지 확인 \hypertarget{classCMySql_af7eb82330c5e96fd76d740654639aa40}{
+\index{CMySql@{CMySql}!hasPrev@{hasPrev}}
+\index{hasPrev@{hasPrev}!CMySql@{CMySql}}
+\subsubsection[{hasPrev}]{\setlength{\rightskip}{0pt plus 5cm}bool CMySql::hasPrev ()}}
+\label{classCMySql_af7eb82330c5e96fd76d740654639aa40}
+
+
+이전 조회데이터가 있는지 확인 \hypertarget{classCMySql_a5be8786b07864ba655ef55378f66ada7}{
+\index{CMySql@{CMySql}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!CMySql@{CMySql}}
+\subsubsection[{isConnected}]{\setlength{\rightskip}{0pt plus 5cm}bool CMySql::isConnected ()}}
+\label{classCMySql_a5be8786b07864ba655ef55378f66ada7}
+
+
+MySql 접속 확인. \hypertarget{classCMySql_af8409e3cd8cb029fa1823efe99e7524b}{
+\index{CMySql@{CMySql}!Last@{Last}}
+\index{Last@{Last}!CMySql@{CMySql}}
+\subsubsection[{Last}]{\setlength{\rightskip}{0pt plus 5cm}int CMySql::Last ()}}
+\label{classCMySql_af8409e3cd8cb029fa1823efe99e7524b}
+
+
+마지막 ROW로 셋팅 \hypertarget{classCMySql_a92ff6e04a1a7985494e948884d4ab8fb}{
+\index{CMySql@{CMySql}!Move@{Move}}
+\index{Move@{Move}!CMySql@{CMySql}}
+\subsubsection[{Move}]{\setlength{\rightskip}{0pt plus 5cm}int CMySql::Move (int {\em cnt})}}
+\label{classCMySql_a92ff6e04a1a7985494e948884d4ab8fb}
+
+
+cnt만큼 이동한 조회데이터 셋팅 \hypertarget{classCMySql_ab68631ceb288121957589643cd096757}{
+\index{CMySql@{CMySql}!Next@{Next}}
+\index{Next@{Next}!CMySql@{CMySql}}
+\subsubsection[{Next}]{\setlength{\rightskip}{0pt plus 5cm}int CMySql::Next ()}}
+\label{classCMySql_ab68631ceb288121957589643cd096757}
+
+
+다음 조회데이터로 셋팅 \hypertarget{classCMySql_ab282013a24a7629a8fbfd5520e13bf0e}{
+\index{CMySql@{CMySql}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!CMySql@{CMySql}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}string CMySql::operator\mbox{[}$\,$\mbox{]} (const string {\em fieldName})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMySql_ab282013a24a7629a8fbfd5520e13bf0e}
+
+
+
+\begin{DoxyCode}
+45 { return getField(fieldName); }
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:\hypertarget{classCMySql_a579e51c63985da9d8a0bd9a6b463879a}{
+\index{CMySql@{CMySql}!Prev@{Prev}}
+\index{Prev@{Prev}!CMySql@{CMySql}}
+\subsubsection[{Prev}]{\setlength{\rightskip}{0pt plus 5cm}int CMySql::Prev ()}}
+\label{classCMySql_a579e51c63985da9d8a0bd9a6b463879a}
+
+
+이전 조회데이터로 셋팅 
+
+\subsection{멤버 데이타 문서화}
+\hypertarget{classCMySql_a3733f6741b063ef20005dfe92893655b}{
+\index{CMySql@{CMySql}!m\_\-filed@{m\_\-filed}}
+\index{m\_\-filed@{m\_\-filed}!CMySql@{CMySql}}
+\subsubsection[{m\_\-filed}]{\setlength{\rightskip}{0pt plus 5cm}MYSQL\_\-FIELD$\ast$ {\bf CMySql::m\_\-filed}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCMySql_a3733f6741b063ef20005dfe92893655b}
+
+
+현재 ROW의 FIELD정보 \hypertarget{classCMySql_a74732c9ad7550228311df70ff7846870}{
+\index{CMySql@{CMySql}!m\_\-MySqlConnection@{m\_\-MySqlConnection}}
+\index{m\_\-MySqlConnection@{m\_\-MySqlConnection}!CMySql@{CMySql}}
+\subsubsection[{m\_\-MySqlConnection}]{\setlength{\rightskip}{0pt plus 5cm}MYSQL$\ast$ {\bf CMySql::m\_\-MySqlConnection}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCMySql_a74732c9ad7550228311df70ff7846870}
+
+
+MySql 연결체. \hypertarget{classCMySql_a434ad1058383726a4e0851bd4af83bed}{
+\index{CMySql@{CMySql}!m\_\-res@{m\_\-res}}
+\index{m\_\-res@{m\_\-res}!CMySql@{CMySql}}
+\subsubsection[{m\_\-res}]{\setlength{\rightskip}{0pt plus 5cm}MYSQL\_\-RES$\ast$ {\bf CMySql::m\_\-res}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCMySql_a434ad1058383726a4e0851bd4af83bed}
+
+
+Select 결과 데이터. \hypertarget{classCMySql_a9f0d22a3ca8f698ed70289452342f53e}{
+\index{CMySql@{CMySql}!m\_\-row@{m\_\-row}}
+\index{m\_\-row@{m\_\-row}!CMySql@{CMySql}}
+\subsubsection[{m\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}MYSQL\_\-ROW {\bf CMySql::m\_\-row}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCMySql_a9f0d22a3ca8f698ed70289452342f53e}
+
+
+Select결과에서 현재 ROW정보. 
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{MySql_8h}{MySql.h}\item 
+src/MySql/\hyperlink{MySql_8cpp}{MySql.cpp}\end{DoxyCompactItemize}
