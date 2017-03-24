@@ -1,0 +1,234 @@
+[2017-03-24 21:19:39.393038] <info> (Test.cpp::main::18) : head pt: 0, tail pt: 18
+[2017-03-24 21:19:39.393369] <info> (Test.cpp::main::21) : read message: test11tteess182349
+[2017-03-24 21:19:39.393395] <info> (Test.cpp::main::22) : head pt: 18, tail pt: 18
+[2017-03-24 21:19:39.393414] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 36
+[2017-03-24 21:21:08.284023] <info> (Test.cpp::main::19) : head pt: 0, tail pt: 18
+[2017-03-24 21:21:08.284183] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284214] <info> (Test.cpp::main::24) : head pt: 18, tail pt: 18
+[2017-03-24 21:21:08.284235] <info> (Test.cpp::main::19) : head pt: 18, tail pt: 36
+[2017-03-24 21:21:08.284255] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284272] <info> (Test.cpp::main::24) : head pt: 36, tail pt: 36
+[2017-03-24 21:21:08.284290] <info> (Test.cpp::main::19) : head pt: 36, tail pt: 54
+[2017-03-24 21:21:08.284307] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284335] <info> (Test.cpp::main::24) : head pt: 54, tail pt: 54
+[2017-03-24 21:21:08.284353] <info> (Test.cpp::main::19) : head pt: 54, tail pt: 72
+[2017-03-24 21:21:08.284371] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284388] <info> (Test.cpp::main::24) : head pt: 72, tail pt: 72
+[2017-03-24 21:21:08.284405] <info> (Test.cpp::main::19) : head pt: 72, tail pt: 72
+[2017-03-24 21:21:08.284422] <info> (Test.cpp::main::23) : read message: 
+[2017-03-24 21:21:08.284439] <info> (Test.cpp::main::24) : head pt: 90, tail pt: 72
+[2017-03-24 21:21:08.284456] <info> (Test.cpp::main::19) : head pt: 90, tail pt: 72
+[2017-03-24 21:21:08.284473] <info> (Test.cpp::main::23) : read message: 
+[2017-03-24 21:21:08.284490] <info> (Test.cpp::main::24) : head pt: 0, tail pt: 72
+[2017-03-24 21:21:08.284507] <info> (Test.cpp::main::19) : head pt: 0, tail pt: 72
+[2017-03-24 21:21:08.284524] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284541] <info> (Test.cpp::main::24) : head pt: 18, tail pt: 72
+[2017-03-24 21:21:08.284558] <info> (Test.cpp::main::19) : head pt: 18, tail pt: 72
+[2017-03-24 21:21:08.284575] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284597] <info> (Test.cpp::main::24) : head pt: 36, tail pt: 72
+[2017-03-24 21:21:08.284628] <info> (Test.cpp::main::19) : head pt: 36, tail pt: 72
+[2017-03-24 21:21:08.284656] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284685] <info> (Test.cpp::main::24) : head pt: 54, tail pt: 72
+[2017-03-24 21:21:08.284716] <info> (Test.cpp::main::19) : head pt: 54, tail pt: 72
+[2017-03-24 21:21:08.284735] <info> (Test.cpp::main::23) : read message: test11tteess182349
+[2017-03-24 21:21:08.284752] <info> (Test.cpp::main::24) : head pt: 72, tail pt: 72
+[2017-03-24 21:21:51.753648] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.753801] <info> (Test.cpp::main::20) : head pt: 0, tail pt: 18
+[2017-03-24 21:21:51.753826] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.753845] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 18
+[2017-03-24 21:21:51.753866] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.753884] <info> (Test.cpp::main::20) : head pt: 18, tail pt: 36
+[2017-03-24 21:21:51.753902] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.753920] <info> (Test.cpp::main::25) : head pt: 36, tail pt: 36
+[2017-03-24 21:21:51.753938] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.753955] <info> (Test.cpp::main::20) : head pt: 36, tail pt: 54
+[2017-03-24 21:21:51.753973] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.753991] <info> (Test.cpp::main::25) : head pt: 54, tail pt: 54
+[2017-03-24 21:21:51.754009] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.754026] <info> (Test.cpp::main::20) : head pt: 54, tail pt: 72
+[2017-03-24 21:21:51.754044] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.754061] <info> (Test.cpp::main::25) : head pt: 72, tail pt: 72
+[2017-03-24 21:21:51.754079] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.754097] <info> (Test.cpp::main::20) : head pt: 72, tail pt: 72
+[2017-03-24 21:21:51.754114] <info> (Test.cpp::main::24) : read message: 
+[2017-03-24 21:21:51.754132] <info> (Test.cpp::main::25) : head pt: 90, tail pt: 72
+[2017-03-24 21:21:51.754150] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.754167] <info> (Test.cpp::main::20) : head pt: 90, tail pt: 72
+[2017-03-24 21:21:51.754185] <info> (Test.cpp::main::24) : read message: 
+[2017-03-24 21:21:51.754203] <info> (Test.cpp::main::25) : head pt: 0, tail pt: 72
+[2017-03-24 21:21:51.754220] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.754238] <info> (Test.cpp::main::20) : head pt: 0, tail pt: 72
+[2017-03-24 21:21:51.754255] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.754273] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 72
+[2017-03-24 21:21:51.754291] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.754308] <info> (Test.cpp::main::20) : head pt: 18, tail pt: 72
+[2017-03-24 21:21:51.754339] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.754357] <info> (Test.cpp::main::25) : head pt: 36, tail pt: 72
+[2017-03-24 21:21:51.754375] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.754393] <info> (Test.cpp::main::20) : head pt: 36, tail pt: 72
+[2017-03-24 21:21:51.754411] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.754428] <info> (Test.cpp::main::25) : head pt: 54, tail pt: 72
+[2017-03-24 21:21:51.754446] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:21:51.754463] <info> (Test.cpp::main::20) : head pt: 54, tail pt: 72
+[2017-03-24 21:21:51.754481] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:21:51.754499] <info> (Test.cpp::main::25) : head pt: 72, tail pt: 72
+[2017-03-24 21:29:42.427118] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427277] <info> (Test.cpp::main::20) : head pt: 0, tail pt: 18
+[2017-03-24 21:29:42.427301] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427333] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 18
+[2017-03-24 21:29:42.427358] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427375] <info> (Test.cpp::main::20) : head pt: 18, tail pt: 36
+[2017-03-24 21:29:42.427392] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427409] <info> (Test.cpp::main::25) : head pt: 36, tail pt: 36
+[2017-03-24 21:29:42.427426] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427442] <info> (Test.cpp::main::20) : head pt: 36, tail pt: 54
+[2017-03-24 21:29:42.427459] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427476] <info> (Test.cpp::main::25) : head pt: 54, tail pt: 54
+[2017-03-24 21:29:42.427492] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427509] <info> (Test.cpp::main::20) : head pt: 54, tail pt: 72
+[2017-03-24 21:29:42.427528] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427549] <info> (Test.cpp::main::25) : head pt: 72, tail pt: 72
+[2017-03-24 21:29:42.427567] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427583] <info> (Test.cpp::main::20) : head pt: 72, tail pt: 72
+[2017-03-24 21:29:42.427600] <info> (Test.cpp::main::24) : read message: 
+[2017-03-24 21:29:42.427616] <info> (Test.cpp::main::25) : head pt: 90, tail pt: 72
+[2017-03-24 21:29:42.427633] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427649] <info> (Test.cpp::main::20) : head pt: 90, tail pt: 72
+[2017-03-24 21:29:42.427666] <info> (Test.cpp::main::24) : read message: 
+[2017-03-24 21:29:42.427683] <info> (Test.cpp::main::25) : head pt: 0, tail pt: 72
+[2017-03-24 21:29:42.427699] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427716] <info> (Test.cpp::main::20) : head pt: 0, tail pt: 72
+[2017-03-24 21:29:42.427732] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427749] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 72
+[2017-03-24 21:29:42.427765] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427782] <info> (Test.cpp::main::20) : head pt: 18, tail pt: 72
+[2017-03-24 21:29:42.427798] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427815] <info> (Test.cpp::main::25) : head pt: 36, tail pt: 72
+[2017-03-24 21:29:42.427832] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427848] <info> (Test.cpp::main::20) : head pt: 36, tail pt: 72
+[2017-03-24 21:29:42.427865] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427881] <info> (Test.cpp::main::25) : head pt: 54, tail pt: 72
+[2017-03-24 21:29:42.427898] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:29:42.427914] <info> (Test.cpp::main::20) : head pt: 54, tail pt: 72
+[2017-03-24 21:29:42.427931] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:29:42.427947] <info> (Test.cpp::main::25) : head pt: 72, tail pt: 72
+[2017-03-24 21:30:55.479909] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480068] <info> (Test.cpp::main::20) : head pt: 0, tail pt: 18
+[2017-03-24 21:30:55.480092] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480110] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 18
+[2017-03-24 21:30:55.480129] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480145] <info> (Test.cpp::main::20) : head pt: 18, tail pt: 36
+[2017-03-24 21:30:55.480162] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480178] <info> (Test.cpp::main::25) : head pt: 36, tail pt: 36
+[2017-03-24 21:30:55.480194] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480210] <info> (Test.cpp::main::20) : head pt: 36, tail pt: 54
+[2017-03-24 21:30:55.480226] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480242] <info> (Test.cpp::main::25) : head pt: 54, tail pt: 54
+[2017-03-24 21:30:55.480258] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480274] <info> (Test.cpp::main::20) : head pt: 54, tail pt: 72
+[2017-03-24 21:30:55.480290] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480307] <info> (Test.cpp::main::25) : head pt: 72, tail pt: 72
+[2017-03-24 21:30:55.480336] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480353] <info> (Test.cpp::main::20) : head pt: 72, tail pt: 90
+[2017-03-24 21:30:55.480370] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480386] <info> (Test.cpp::main::25) : head pt: 90, tail pt: 90
+[2017-03-24 21:30:55.480402] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480418] <info> (Test.cpp::main::20) : head pt: 90, tail pt: 108
+[2017-03-24 21:30:55.480434] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480450] <info> (Test.cpp::main::25) : head pt: 108, tail pt: 108
+[2017-03-24 21:30:55.480466] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480482] <info> (Test.cpp::main::20) : head pt: 108, tail pt: 126
+[2017-03-24 21:30:55.480499] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480515] <info> (Test.cpp::main::25) : head pt: 126, tail pt: 126
+[2017-03-24 21:30:55.480531] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480547] <info> (Test.cpp::main::20) : head pt: 126, tail pt: 16
+[2017-03-24 21:30:55.480563] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480579] <info> (Test.cpp::main::25) : head pt: 16, tail pt: 16
+[2017-03-24 21:30:55.480596] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480612] <info> (Test.cpp::main::20) : head pt: 16, tail pt: 34
+[2017-03-24 21:30:55.480628] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480644] <info> (Test.cpp::main::25) : head pt: 34, tail pt: 34
+[2017-03-24 21:30:55.480660] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 21:30:55.480676] <info> (Test.cpp::main::20) : head pt: 34, tail pt: 52
+[2017-03-24 21:30:55.480692] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 21:30:55.480708] <info> (Test.cpp::main::25) : head pt: 52, tail pt: 52
+[2017-03-24 22:48:10.769896] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770072] <info> (Test.cpp::main::20) : head pt: 0, tail pt: 18
+[2017-03-24 22:48:10.770097] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770116] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 18
+[2017-03-24 22:48:10.770135] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770152] <info> (Test.cpp::main::20) : head pt: 18, tail pt: 36
+[2017-03-24 22:48:10.770169] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770186] <info> (Test.cpp::main::25) : head pt: 36, tail pt: 36
+[2017-03-24 22:48:10.770203] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770219] <info> (Test.cpp::main::20) : head pt: 36, tail pt: 54
+[2017-03-24 22:48:10.770236] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770253] <info> (Test.cpp::main::25) : head pt: 54, tail pt: 54
+[2017-03-24 22:48:10.770270] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770286] <info> (Test.cpp::main::20) : head pt: 54, tail pt: 72
+[2017-03-24 22:48:10.770303] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770330] <info> (Test.cpp::main::25) : head pt: 72, tail pt: 72
+[2017-03-24 22:48:10.770348] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770365] <info> (Test.cpp::main::20) : head pt: 72, tail pt: 90
+[2017-03-24 22:48:10.770382] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770398] <info> (Test.cpp::main::25) : head pt: 90, tail pt: 90
+[2017-03-24 22:48:10.770415] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770431] <info> (Test.cpp::main::20) : head pt: 90, tail pt: 108
+[2017-03-24 22:48:10.770448] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770465] <info> (Test.cpp::main::25) : head pt: 108, tail pt: 108
+[2017-03-24 22:48:10.770481] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770498] <info> (Test.cpp::main::20) : head pt: 108, tail pt: 126
+[2017-03-24 22:48:10.770514] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770531] <info> (Test.cpp::main::25) : head pt: 126, tail pt: 126
+[2017-03-24 22:48:10.770548] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770564] <info> (Test.cpp::main::20) : head pt: 126, tail pt: 16
+[2017-03-24 22:48:10.770581] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770597] <info> (Test.cpp::main::25) : head pt: 16, tail pt: 16
+[2017-03-24 22:48:10.770614] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770630] <info> (Test.cpp::main::20) : head pt: 16, tail pt: 34
+[2017-03-24 22:48:10.770647] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770664] <info> (Test.cpp::main::25) : head pt: 34, tail pt: 34
+[2017-03-24 22:48:10.770680] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:10.770696] <info> (Test.cpp::main::20) : head pt: 34, tail pt: 52
+[2017-03-24 22:48:10.770713] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:10.770729] <info> (Test.cpp::main::25) : head pt: 52, tail pt: 52
+[2017-03-24 22:48:17.086120] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086279] <info> (Test.cpp::main::20) : head pt: 0, tail pt: 18
+[2017-03-24 22:48:17.086303] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086334] <info> (Test.cpp::main::25) : head pt: 18, tail pt: 18
+[2017-03-24 22:48:17.086356] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086373] <info> (Test.cpp::main::20) : head pt: 18, tail pt: 36
+[2017-03-24 22:48:17.086390] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086406] <info> (Test.cpp::main::25) : head pt: 36, tail pt: 36
+[2017-03-24 22:48:17.086423] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086440] <info> (Test.cpp::main::20) : head pt: 36, tail pt: 54
+[2017-03-24 22:48:17.086457] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086473] <info> (Test.cpp::main::25) : head pt: 54, tail pt: 54
+[2017-03-24 22:48:17.086490] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086506] <info> (Test.cpp::main::20) : head pt: 54, tail pt: 72
+[2017-03-24 22:48:17.086523] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086540] <info> (Test.cpp::main::25) : head pt: 72, tail pt: 72
+[2017-03-24 22:48:17.086557] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086573] <info> (Test.cpp::main::20) : head pt: 72, tail pt: 90
+[2017-03-24 22:48:17.086589] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086606] <info> (Test.cpp::main::25) : head pt: 90, tail pt: 90
+[2017-03-24 22:48:17.086622] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086639] <info> (Test.cpp::main::20) : head pt: 90, tail pt: 108
+[2017-03-24 22:48:17.086656] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086672] <info> (Test.cpp::main::25) : head pt: 108, tail pt: 108
+[2017-03-24 22:48:17.086689] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086705] <info> (Test.cpp::main::20) : head pt: 108, tail pt: 126
+[2017-03-24 22:48:17.086722] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086738] <info> (Test.cpp::main::25) : head pt: 126, tail pt: 126
+[2017-03-24 22:48:17.086755] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086771] <info> (Test.cpp::main::20) : head pt: 126, tail pt: 16
+[2017-03-24 22:48:17.086788] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086804] <info> (Test.cpp::main::25) : head pt: 16, tail pt: 16
+[2017-03-24 22:48:17.086821] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086837] <info> (Test.cpp::main::20) : head pt: 16, tail pt: 34
+[2017-03-24 22:48:17.086854] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086870] <info> (Test.cpp::main::25) : head pt: 34, tail pt: 34
+[2017-03-24 22:48:17.086887] <info> (Test.cpp::main::19) : write message..
+[2017-03-24 22:48:17.086903] <info> (Test.cpp::main::20) : head pt: 34, tail pt: 52
+[2017-03-24 22:48:17.086919] <info> (Test.cpp::main::24) : read message: test11tteess182349
+[2017-03-24 22:48:17.086936] <info> (Test.cpp::main::25) : head pt: 52, tail pt: 52
