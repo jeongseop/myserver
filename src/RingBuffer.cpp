@@ -1,19 +1,15 @@
 #include "RingBuffer.hpp"
 
 /**
- * @brief 생성자
+ * @brief 버퍼 생성 메소드
  * @param capacity_ 순환버퍼의 크기
  */
-CRingBuffer::CRingBuffer(int capacity_)
-	: m_capacity(capacity_), m_head(0), m_tail(0), m_data_len(0)
+void CRingBuffer::create_buffer(int capacity_)
 {
-}
+	if(nullptr != m_buffer)
+		return;
 
-/**
- * @brief 버퍼 생성 메소드
- */
-void CRingBuffer::create_buffer()
-{
+	m_capacity = capacity_;
 	m_buffer = new char[m_capacity];
 }
 
@@ -22,7 +18,11 @@ void CRingBuffer::create_buffer()
  */
 void CRingBuffer::free_buffer()
 {
+	if(nullptr == m_buffer)
+		return;
+
 	delete[] m_buffer;
+	m_buffer = nullptr;
 }
 
 
@@ -51,6 +51,15 @@ int CRingBuffer::get_head()
 int CRingBuffer::get_tail()
 {
 	return m_tail;
+}
+
+/**
+ * @brief 순환버퍼에 입력된 데이터길이 반환
+ * @return int m_data_len
+ */
+int CRingBuffer::get_data_len()
+{
+	return m_data_len;
 }
 
 /**

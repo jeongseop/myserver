@@ -24,21 +24,16 @@ private:
 	int m_data_len;
 
 public:
-	CRingBuffer(int capacity_);
-
-public:
-	void create_buffer();
+	void create_buffer(int capacity_);
 	void free_buffer();
 
 	int get_capacity();
 	int get_head();
 	int get_tail();
+	int get_data_len();
 
 	bool read_buffer(char *buf_, int len_);
 	bool write_buffer(const char *data_, int len_);
-
-private:
-	int get_free_space();
 };
 
 #endif // _RING_BUFFER_HPP_ end
